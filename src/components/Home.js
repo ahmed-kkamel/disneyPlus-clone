@@ -57,7 +57,6 @@ const Home = () => {
 			);
 		});
 
-		// Unsubscribe when the component unmounts
 		return () => unsubscribe();
 	}, [userName, dispatch]);
 

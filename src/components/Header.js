@@ -10,6 +10,7 @@ import {
 } from "../features/user/userSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 const Header = () => {
 	const dispatch = useDispatch();
 	const navigate = useNavigate();
@@ -58,30 +59,30 @@ const Header = () => {
 			) : (
 				<>
 					<NavMenu>
-						<a href="/home">
+						<Link to="/home">
 							<img src="/images/home-icon.svg" alt="HOME" />
 							<span>HOME</span>
-						</a>
-						<a href="/home">
+						</Link>
+						<Link to="/home">
 							<img src="/images/search-icon.svg" alt="SEARCH" />
 							<span>SEARCH</span>
-						</a>
-						<a href="/home">
+						</Link>
+						<Link to="/home">
 							<img src="/images/watchlist-icon.svg" alt="WATCHLIST" />
 							<span>WATCHLIST</span>
-						</a>
-						<a href="/home">
+						</Link>
+						<Link to="/home">
 							<img src="/images/original-icon.svg" alt="ORIGINALS" />
 							<span>ORIGINALS</span>
-						</a>
-						<a href="/home">
+						</Link>
+						<Link to="/home">
 							<img src="/images/movie-icon.svg" alt="MOVIES" />
 							<span>MOVIES</span>
-						</a>
-						<a href="/home">
+						</Link>
+						<Link to="/home">
 							<img src="/images/series-icon.svg" alt="SERIES" />
 							<span>SERIES</span>
-						</a>
+						</Link>
 					</NavMenu>
 					<SignOut>
 						<UserImg src={userPhoto} alt={userName} />
